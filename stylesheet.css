@@ -15,19 +15,19 @@ header {
     width: 100%;
   }
   nav a {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 400;
     text-decoration: none;
     color: whitesmoke;
   }
   .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin: 0% 2% ;
   }
 
   .navbar #ExLinks {
-    display: flex;
+    
     margin: 40px 20px;
   }
   .navbar #ExLinks a:hover  { 
@@ -35,19 +35,47 @@ header {
 
   }
   .sidenav {
+    margin: 0;
+  padding: 0;
     height: 100%;
     width: 160px;
     position: fixed;
     background-color: #191b1a;
+    z-index: 1;
+  top: 0;
+  left: 0;
     padding-top: 20px;
   }
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 2.5rem;
     color: whitesmoke;
     display: block;
   }
   .sidenav a:hover {
     color: #FE9C00;
+  }
+  main{
+    margin-left: 160px;
+    padding: 0px 10px;
+  }
+  footer {
+    margin-left: 160px;
+    clear: both;
+    width: 100% -160px;
+    overflow: auto;
+    background-color: #191b1a;
+    text-align: center;
+  }
+  .footer-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-row-first-col-logo{
+    flex-grow: 2;
+  }
+  .footer-row-second-col-links{
+    flex-grow: 1;
   }
